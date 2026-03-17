@@ -3,16 +3,21 @@
     "name": "SONA-",
     "slug": "SONA-",
     "version": "1.0.0",
+    "scheme": "sona",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#121212"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tejiribazunu.SONA",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -25,12 +30,17 @@
       "package": "com.tejiribazunu.SONA"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
     },
     "extra": {
       "eas": {
         "projectId": "8b13aa76-19c0-4e3e-bca7-0206dce3dc30"
       }
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
